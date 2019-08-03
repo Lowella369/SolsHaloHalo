@@ -24,12 +24,6 @@ section{
   padding-left: 10%;
   padding-right: 10%;
 }
-.contactForm
-{
-  padding-top: 10px;
-  padding-left: 30%;
-  padding-right: 30%;
-}
 .news
 {
   width: calc( 33% - 16px );
@@ -43,6 +37,16 @@ section{
   padding-right: calc(33% - 16px);
   text-align: justify;
   color: white;
+}
+aside {
+  padding-top: 20px;
+  margin: 20px;
+  }
+nav{
+  display: flex;
+}
+nav > aside{
+  flex: 1;
 }
 footer{
   padding-top: 30px;
@@ -73,11 +77,16 @@ footer{
   background-color: rgb(226, 15, 78);
   color: white;
 }
-@media (max-width: 500px) {
-  a, main, li {
-      display: block;
+/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
-  }
+  a, main, li, nav{
+    display: block;
+}
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -101,7 +110,12 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: palevioletred;
 }
-
+.contactForm
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
 .container {
   border-radius: 5px;
   background-color: pink;
@@ -122,14 +136,3 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-  
