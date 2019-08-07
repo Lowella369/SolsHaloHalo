@@ -1,17 +1,20 @@
-body{
+body {
   background-color: red;
   border: 2px white solid;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
-}header{
+}
+
+header {
   text-align:center;
 }
-li
-{
+
+li {
   display: inline;  
   list-style:none;
   text-align: center;
 }
+
 main {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -19,40 +22,46 @@ main {
   margin: 0 auto;
   width: 90%;
 }
-section{
+
+section {
   padding-top: 10px;
   padding-left: 10%;
   padding-right: 10%;
 }
-.news
-{
+
+.news {
   width: calc( 33% - 16px );
   margin: 30px;
   display: inline-block;
   color: white;
 }
-.about-us
-{
+
+.about-us {
   padding-left: calc( 33% - 16px );
   padding-right: calc(33% - 16px);
   text-align: justify;
   color: white;
 }
+
 aside {
   padding-top: 20px;
   margin: 20px;
-  }
-nav{
+}
+
+nav {
   display: flex;
 }
-nav > aside{
+
+nav > aside {
   flex: 1;
 }
-footer{
+
+footer {
   padding-top: 30px;
-  color: whitesmoke;
+  color: gray;
   text-align: center;
 }
+
 .topnav {
   overflow: hidden;
   background-color: lightcoral;
@@ -60,6 +69,7 @@ footer{
   border-bottom: 2px white solid;
 
 }
+
 .topnav a {
   color: #f2f2f2;
   text-align: center;
@@ -77,16 +87,18 @@ footer{
   background-color: rgb(226, 15, 78);
   color: white;
 }
+
 /* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
-  a, main, li, nav{
+  a, main, li, nav {
     display: block;
 }
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -110,18 +122,20 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: palevioletred;
 }
-.contactForm
-{
+
+.contactForm {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
 }
+
 .container {
   border-radius: 5px;
   background-color: pink;
   padding: 20px;
   color: red;
 }
+
 /* Create two columns that float next to eachother */
 .column {
   float: left;
